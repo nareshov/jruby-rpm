@@ -1,5 +1,5 @@
 Name:    jruby
-Version: 1.5.6
+Version: 1.6.0
 Release:  1%{?dist}
 Summary:  Pure-Java Implementation of the Ruby Programming Language
 Group:    Development/System 
@@ -14,13 +14,13 @@ Source5:  jrubyc
 Source6:  jri
 Source7:  jgem
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
-Requires: java-1.6.0-openjdk
+Requires: jdk
 
 %description
 100% Pure-Java Implementation of the Ruby Programming Language
 
 Features:
-Ruby 1.8.7 Compatible
+Ruby 1.8.7 and 1.9.2 Compatible
 High performance
 Real threading
 Vast array of libraries
@@ -61,6 +61,9 @@ rm -rf $RPM_BUILD_ROOT
 /usr/bin
 
 %changelog
+* Tue Mar 22 2011 Naresh V. <naresh.ve@directi.com> - 1.6.0-1
+- updated to 1.6.0 and updated description
+
 * Sun Dec 19 2010 Sergio Rubio <rubiojr@frameos.org> - 1.5.6-1
 - updated to 1.5.6
 
